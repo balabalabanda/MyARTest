@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: a8bde31f786a3994888b9edafa318438
+timeCreated: 1497150997
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - DoCube: {fileID: 1380808822392836, guid: 1eba8755fdfcb7645893777b14546f84, type: 2}
+  - ReCube: {fileID: 1923635861571674, guid: 3392b4ee2f2a7834daaa4a9bae88815a, type: 2}
+  - MiCube: {fileID: 1923635861571674, guid: f0d6502092a964f46a1d5e56c82a86bd, type: 2}
+  - FaCube: {fileID: 1923635861571674, guid: 907a5ec63580e29449c42b7e11890d12, type: 2}
+  - SoCube: {fileID: 1923635861571674, guid: 9a2ef7e0ccc7a3745aa07173e18a8bb6, type: 2}
+  - LaCube: {fileID: 1923635861571674, guid: d2d9f7bd3b5c46f4a8c479bf7b94f105, type: 2}
+  - XiCube: {fileID: 1923635861571674, guid: 2d5f687feea1fcd4ebbcfc1054964a56, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
