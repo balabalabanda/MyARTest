@@ -65,6 +65,12 @@ namespace GoogleARCore.Examples.HelloAR
         /// the application to avoid per-frame allocations.
         /// </summary>
         private List<DetectedPlane> m_AllPlanes = new List<DetectedPlane>();
+        
+        /// <summary>
+        /// 保存位置信息，计算速度
+        /// </summary>
+        private Stack<Vector3> positions = new Stack<Vector3>();
+        float velocity = 0;
 
         /// <summary>
         /// True if the app is in the process of quitting due to an ARCore connection error, otherwise false.
@@ -91,6 +97,17 @@ namespace GoogleARCore.Examples.HelloAR
             }
 
             SearchingForPlaneUI.SetActive(showSearchingUI);
+
+
+            //计算速度
+            Vector3 lastPosition;
+            if (positions.Count>30)
+            {
+                lastPosition = positions.Pop();
+                velocity = (Frame.Pose.position - lastPosition).magnitude;
+            }
+            positions.Push(Frame.Pose.position);
+           
 
             // If the player has not touched the screen, we are done with this update.
             Touch touch;
